@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cake O'clock</title>
+    <link rel="stylesheet"  href="css/style.css">
+    <link rel="stylesheet"  href="css/menu.css">
+    <link rel="stylesheet"  href="css/contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="row clearfix">
+                <img src="images/newLogo.png" class="logo" alt="not found">
+                <ul class="main-nav animate__animated animate__bounce" id="check-class">
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>    
+                    <li><a href="login.html">SIGN UP</a></li>    
+                    <li><a href="#footer">CONTACT US</a></li>    
+                    
+                </ul>
+                <a href="#" class="mobile-menu" onclick="slideshow()"><i class="fa fa-bars"></i></a>
+            </div>
+        </nav>
+        <div class="main-content-header ">
+        <h1><span class="blink">CAKE O'CLOCK.</span><br></h1>
+           <h2> The best cake in town.</h2>
+        <a href="#menu" class="btn-more">Our Menu</a>  
+        <a href="order.html" class="btn-order">Click to order</a>   
+        
+        </div> 
+    </header>
+
+    <script type="text/javascript">
+        function slideshow(){
+            var x = document.getElementById('check-class');
+            if(x.style.display === "none"){
+                x.style.display="block";
+            } else{
+                x.style.display="none";
+            }
+        }
+
+    </script>
+
+
+     <!-- menu -->
+     <body>
+        <div class="main" id="menu">
+            <div class="section-title">
+                <h3><span class= "menu_blink">our menu</span></h3>
+            </div>
+            <div class="menus">
+                <div class="menu-column">
+                    
+                    <div class="single-menu">
+                        <img src="images/chocolate.jpeg" alt="">
+                        <div class="menu-content">
+                            <h5>CHOCO <span>Rs. 399</span></h5>
+                            <p>Cake made from stacked<br>
+                               layers of cake held <br>
+                               together by fillingBlack <br>
+                               Forest gateau </p>
+                        </div>
+                    </div>
+                    <div class="single-menu">
+                        <img src="images/caramel.jpeg" alt="">
+                        <div class="menu-content">
+                            <h5>CARAMEL<span>Rs. 499</span></h5>
+                            <p> cake is made with caramel<br>
+                                cream with a topping of <br>
+                                glazed caramel syrup.</p>
+                        </div>
+                    </div>
+                    <div class="single-menu">
+                        <img src="images/butter.jpg" alt="">
+                        <div class="menu-content">
+                            <h5>BUTTER <span>Rs. 299</span></h5>
+                            <p>cakes are made from<br>
+                            creamed butter, sugar,<br>
+                            eggs, and flour. </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-column">
+                    
+                    <div class="single-menu">
+                        <img src="images/fruit.jpeg" alt="">
+                        <div class="menu-content">
+                            <h5>FRUIT <span>Rs. 499</span></h5>
+                            <p>cake made with candied<br>
+                             or dried fruit, nuts, and <br>
+                             spices, and optionally <br>
+                             soaked in spirits</p>
+                        </div>
+                    </div>
+                    <div class="single-menu">
+                        <img src="images/redvalvet.jpeg" alt="">
+                        <div class="menu-content">
+                            <h5>VALVET <span>   Rs. 699</span></h5>
+                            <p>cake is a layered red-colored<br>
+                            cake with a white icing and <br>
+                            a subtle chocolate flavor.</p>
+                        </div>
+                    </div>
+                    <div class="single-menu">
+                        <img src="images/vanilla.jfif" alt="">
+                        <div class="menu-content">
+                            <h5>VANILLA <span>Rs. 299</span></h5>
+                            <p>cake made with candied<br>
+                                or dried fruit, nuts, and <br>
+                                spices, and optionally <br>
+                                soaked in spirits</p>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+
+        <!-- footer -->
+
+        <footer>
+            <div class="main-content" id="footer" >
+              <div class="left box">
+                
+                <div class="content">
+                  <div class="social">
+                    <a href="https://facebook.com/coding.np"><span class="fab fa-facebook-f"></span></a>
+                    <a href="#"><span class="fab fa-twitter"></span></a>
+                    <a href="https://instagram.com/coding.np"><span class="fab fa-instagram"></span></a>
+                    <a href="https://youtube.com/c/codingnepal"><span class="fab fa-youtube"></span></a>
+                    <p> SPREAD YOU LOVE</p>
+                  </div>
+                </div>
+              </div>
+      
+              <div class="center box">
+                <h7>Address</h7>
+                <div class="content">
+                  <div class="place">
+                    <span class="fas fa-map-marker-alt"></span>
+                    <span class="text">BH7,Phagwara Punjab</span>
+                  </div>
+                  <div class="phone">
+                    <span class="fas fa-phone-alt"></span>
+                    <span class="text">+089-6394363228</span>
+                  </div>
+                  <div class="email">
+                    <span class="fas fa-envelope"></span>
+                    <span class="text">cakeOclock@gmail.com</span>
+                  </div>
+                </div>
+              </div>
+      
+              <div class="right box">
+                <h7>Contact us</h7>
+                <div class="content">
+                  <form action="#">
+                    <div class="email">
+                      <div class="text">Email *</div>
+                      <input type="email" required>
+                    </div>
+                    <div class="msg">
+                      <div class="text">Message *</div>
+                      <textarea rows="2" cols="25" required></textarea>
+                    </div>
+                    <div class="btn">
+                      <button type="submit">Send</button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <div class="bottom">
+              <center>
+                <span class="credit">Created By <a href="index.html">NikhilGupta</a> | </span>
+                <span class="far fa-copyright"></span><span> 2022 All rights reserved.</span>
+              </center>
+            </div>
+          </footer>      
+</body>
+
+</html>

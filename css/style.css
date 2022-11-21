@@ -1,0 +1,168 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    font-size: 20px;
+    color: white;
+    font-family: 'Kaushan Script', cursive;
+}
+.clearfix:after{
+    content:".";
+    visibility: hidden;
+    display:block;
+    height: 0px;
+    clear: both;
+}
+header{
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),  url('../images/image1.jpg');
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.row{
+    max-width: 1180px;
+    margin: auto;
+}
+.logo{
+    height: 120px;
+    width: auto;
+    float: left;
+    margin-top: 25px;
+}
+.main-nav{
+    float: right;
+    margin-top: 25px;
+
+}
+.main-nav li{
+    display: inline-block;
+    list-style: none;
+    margin-left: 40px;
+}
+.main-nav li a{
+    color: white;
+    text-decoration: none;
+    font-size: 90%;
+    font-weight: 100;
+    padding: 5px 0;
+}
+
+.main-nav li a:hover{
+    border-bottom: 2px solid #cc1818;
+
+}
+.main-content-header{
+    
+    margin-left: 110px;
+    margin-top: 50px;
+}
+h1{
+    color: white;
+    font-size: 42px; /* 20*180/100 = 36px */
+    word-spacing: 3px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    
+}
+h2{
+    color: white;
+    font-size: 25px; /* 20*180/100 = 36px */
+    word-spacing: 3px;
+    letter-spacing: 2px;
+    margin-top: 25px;
+    margin-left: 30px;
+    text-transform: uppercase;
+}
+
+    
+
+
+.btn-order{
+    display: inline-block;
+    padding: 10px 30px;
+    text-decoration: none;
+    border-radius: 200px;
+    transition: background-color 0.2s, border 0.2s, color 0.2s;
+    background-color: transparent;
+    color: #e8efc9;
+    margin-right: 15px;
+    margin-top: 40px;
+    border: 1px solid #f22d2d;
+}
+.btn-order:hover{
+    background-color: #f22d2d;
+}
+.btn-more{
+    display: inline-block;
+    padding: 10px 30px;
+    text-decoration: none;
+    border-radius: 200px;
+    transition: background-color 0.2s, border 0.2s, color 0.2s;
+    background-color: transparent;
+    color: #e8efc9;
+    margin-right: 15px;
+    margin-top: 40px;
+    border: 1px solid #080808;
+}
+.btn-more:hover{
+    background-color: rgb(17, 17, 16);
+}
+.blink{
+    animation: colorchangetext 1s infinite;
+}
+
+@keyframes colorchangetext{
+    0%{color: #f22d2d;}
+    25%{color: black;}
+    50%{color: brown;}
+    100%{color:white;}
+
+}
+.mobile-menu{display: none;}
+
+/* responsive making */
+
+@media only screen and (max-width:750px){
+    .main-content-header{
+        
+        padding:0% 2%;
+    }
+}
+@media only screen and (max-width:600px){
+    .main-content-header{padding:0% 2% ;}
+    .main-nav{padding:0% 2% ;}
+}
+
+@media only screen and (max-width:350px){
+    h1{font-size: 30px;}
+    .btn-order{font-size: 15px;}
+    .btn-more{font-size: 15px;}
+    .btn-order{margin-bottom: 15px;}
+}
+@media only screen and (max-width:780px){
+    .main-nav{display: none;float: left;}
+
+    .mobile-menu{
+        display: inline-block;
+        color: white;
+        float: right;
+        margin-top: 30px;
+        margin-right: 20px;
+    }
+
+    .main-nav li{
+        display: block;
+        margin-top: 10px;
+    }
+}
+
+
+
+  
+  
+
+
+
+

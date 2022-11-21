@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+      <title></title>
+        <head>
+          <meta charset="utf-8">
+          <script src="https://kit.fontawesome.com/29efeb0951.js" crossorigin="anonymous"></script>
+          <script src="index.js"></script>
+          <link rel="stylesheet" href="css/order.css">
+       </head>
+       <body>
+       
+         <div class="main">
+         
+            
+            <div class="box">
+                 <p style=" font-size: 22px;text-align:center">Order Now!</p>
+                  <form name="Mform" >
+                   <p>Name:</p>
+                       <input  name="name" id="name" type="text" onblur="checkname();" style="font-size:16px" placeholder="2-8 character" min="2" autofocus  required/><span id="nmsg"></span><br>
+                   <p>Email:</p>
+                     <input name="email" type="email" id="mail" style="font-size:16px" placeholder="@gmail.com" required><br>
+                   <p>Contact No:</p>
+                     <input type="number" id="number"style="font-size:16px" placeholder=" Enter valid number" onblur="checkno();" min="0" required/><span id="pmsg"></span><br>
+                   <p>Select Flavour:</p><br>
+                    <select id="flvr" >
+                    <option  value="Chocolate">Chocolate cake</option>
+                    <option  value="Caramel">Caramel cake</option>
+                    <option value="Butter">Butter cake</option>
+                    <option  value="Fruit">Red Valvet cake</option>
+                    <option  value="Fruit">Vanilla cake</option>
+                    <option  value="Fruit">Fruit cake </option>
+                    </select>
+                    <p>Date of delivery:</p>
+                       <input type="date" id="dat" min="2020-3-3" max="2020-10-30"required><br><br><br>
+                    <div style="font-weight:bold">Quantity</div>
+                     <input id='qt' type=number min="1" max="5" required><br><br><br>
+                    <div style="font-weight:bold">Message on cake (optional)</div><br><br>
+                     <textarea id="area" placeholder=" max 20 characters" maxlength="20" ></textarea><br><br>
+                       <input type="submit" value="Click to order" style="font-size:16px;" id ="btn" onclick="display()">
+                    <p id="paad"></p>
+                  </form>
+                </div>
+              
+         </div>
+      </body>
+</html>
